@@ -1,7 +1,12 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import axios from 'axios';
 
 export default class App extends React.Component {
+  componentDidMount() {
+    axios.get('http://192.168.1.128:6969').then((val) => console.log(val)).catch((e) =>console.log(e))
+  }
+
   render() {
     return (
       <View style={styles.container}>
