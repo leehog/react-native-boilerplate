@@ -1,7 +1,8 @@
 ### Start your emulator:
 
-For example, majje is using the apt-package 'emulator', and will therefore
-firstly list his available virtual devices:
+For example, majje is using the apt-package 'emulator', and will therefore:
+
+List his available virtual devices:
 
 ` emulator -list-avds `
 
