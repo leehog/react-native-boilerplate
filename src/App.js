@@ -1,9 +1,10 @@
 //@flow
-import React from 'react';
-import { Text, View } from 'react-native';
+import Expo from 'expo'
+import React from 'react'
+import { Text, View } from 'react-native'
 import axios from 'axios'
 
-import { styles } from './App.style';
+import { styles } from './App.style'
 import { url } from './local-url'
 
 type State = {
@@ -22,10 +23,10 @@ class App extends React.Component<null, State> {
   render() {
     return (
       <View style={styles.container}>
-        
+        <Text>Hi</Text>
       </View>
     );
   }
 }
 
-export default App
+export default Expo.registerRootComponent(App);
