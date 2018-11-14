@@ -1,14 +1,16 @@
 //@flow
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { Text, View } from 'react-native';
 import axios from 'axios'
+
+import { styles } from './App.style';
 import { url } from './local-url'
 
 type State = {
   
 }
  
-export default class App extends React.Component<null, State> {
+class App extends React.Component<null, State> {
   constructor() {
     super()
   }
@@ -26,11 +28,4 @@ export default class App extends React.Component<null, State> {
   }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App
