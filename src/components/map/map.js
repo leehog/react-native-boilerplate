@@ -1,7 +1,7 @@
 //@flow
 import React from 'react'
 import { StyleSheet, View } from 'react-native'
-//import { styles } from '../App.style'
+import { mapStyles } from './map.style'
 import MapView from 'react-native-maps';
 
 type State = {
@@ -100,7 +100,7 @@ export default class GoogleMap extends React.Component<Props, State> {
   render() {
     return (
         <MapView 
-          style={styles.map}
+          style={mapStyles.map}
           customMapStyle={mapStyle}
           region={{
             latitude: 59.32932349999999,
@@ -112,9 +112,3 @@ export default class GoogleMap extends React.Component<Props, State> {
     );
   }
 }
-
-const styles = StyleSheet.create({
-    map: {
-        flex: 1
-    }
-})
