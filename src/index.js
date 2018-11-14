@@ -1,5 +1,6 @@
+import Expo from 'expo'
 import React from 'react'
-import { View } from 'react-native'
+import { View, Text } from 'react-native'
 
 import App from './App'
 
@@ -11,4 +12,4 @@ class index extends React.Component {
     }
 }
 
-export default index
+export default Expo.registerRootComponent(index);

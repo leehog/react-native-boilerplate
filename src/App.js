@@ -1,5 +1,4 @@
 //@flow
-import Expo from 'expo'
 import React from 'react'
 import { Text, View } from 'react-native'
 import axios from 'axios'
@@ -29,4 +28,4 @@ class App extends React.Component<null, State> {
   }
 }
 
-export default Expo.registerRootComponent(App);
+export default App
