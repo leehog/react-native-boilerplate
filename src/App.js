@@ -4,7 +4,7 @@ import { Text, View } from 'react-native'
 import axios from 'axios'
 import { styles } from './App.style'
 import { url } from './local-url'
-import GoogleMap from './components/map/map'
+import GoogleMap from './components/map/map.container'
 
 type State = {
   
@@ -13,10 +13,6 @@ type State = {
 class App extends React.Component<null, State> {
   constructor() {
     super()
-  }
-
-  componentDidMount() {
-    
   }
 
   render() {
