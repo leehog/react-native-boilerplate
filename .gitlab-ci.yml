@@ -1,0 +1,11 @@
+image: node:latest
+pipelines:
+  default:
+    - step:
+        script:
+          - npm install
+          - npm run flow
+    - step:
+        script:
+          - npm install
+          - npm run eslint
